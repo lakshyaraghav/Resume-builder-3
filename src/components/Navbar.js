@@ -7,7 +7,7 @@ class Navbar extends Component {
     return (
       <>
         <nav class="nav-extended">
-          <div class="nav-wrapper" style={{backgroundColor: "white"}}>
+          <div class="nav-wrapper" style={{backgroundColor: "white", width:"100%"}}>
             <a href="/" class="brand-logo" style={{color:"blue", fontSize:"1.5rem"}}>
               Resume Builder
             </a>

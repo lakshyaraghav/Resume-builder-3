@@ -58,7 +58,7 @@ const Home = (props) => {
   const state = location.state;
   console.log(state);
   return (
-    <div>
+    <>
       <Navbar />
       <div className="">
         <div className="row">
@@ -113,7 +113,7 @@ const Home = (props) => {
           <strong>Phone:-</strong> {state.phone}
         </div>
       </div> */}
-    </div>
+    </>
   );
 };
 

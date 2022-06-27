@@ -1,5 +1,7 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
+import EditIcon from '@mui/icons-material/Edit';
+
 const About = (props) => {
     // const [todos, setTodos] = React.useState([]);
     // const [todo, setTodo] = React.useState("");
@@ -69,7 +71,6 @@ const About = (props) => {
         <div className="card-content">
           <h6 className="mt-bottom">
             <strong>{state.username}</strong>
-            <button>edit</button>
           </h6>
           <h6><strong>Description</strong></h6>
           <p className="grey-text">{state.desc}</p>
@@ -82,20 +83,24 @@ const About = (props) => {
             <div className="col s12 m6 l6 xl6">
               <p>
                 <strong>Name:</strong> {state.username}
+                <EditIcon />
               </p>
               <p>
                 <strong>Email:</strong>
                 {state.email}
+                <EditIcon />
               </p>
               <p>
                 <strong>Phone:</strong>
                 {state.phone}
+                <EditIcon />
               </p>
             </div>
             <div className="col s12 m6 l6 xl6">
               <p>
                 <strong>Address:</strong>
                 {state.address}
+                <EditIcon />
               </p>
             </div>
           </div>
